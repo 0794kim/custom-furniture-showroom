@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="사용자의 문제를 단단한 제품으로 만드는 프론트엔드 개발자 김민준의 포트폴리오">
+  <title>김민준 — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 바로가기</a>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="홈으로 이동">MJ<span>.</span></a>
+    <button class="menu-button" type="button" aria-label="메뉴 열기" aria-expanded="false" aria-controls="primary-nav">
+      <span></span><span></span>
+    </button>
+    <nav id="primary-nav" class="nav" aria-label="주요 메뉴">
+      <a href="#about">소개</a>
+      <a href="#work">프로젝트</a>
+      <a href="#contact">연락처</a>
+      <a class="nav-cta" href="mailto:hello@example.com">함께 일하기 <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="status-dot"></span> Frontend Developer · Seoul</p>
+        <h1>아이디어를,<br><em>경험으로.</em></h1>
+        <p class="hero-description">복잡함은 덜어내고 본질은 선명하게.<br><strong>사람을 이해하는 제품</strong>을 코드로 만듭니다.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#work">프로젝트 보기 <span aria-hidden="true">›</span></a>
+          <a class="text-link" href="#about">더 알아보기 <span aria-hidden="true">›</span></a>
+        </div>
+      </div>
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="code-card">
+          <div class="code-head"><i></i><i></i><i></i><span>product.ts</span></div>
+          <pre><code><b>const</b> developer = {
+  focus: <i>'user experience'</i>,
+  tools: [<i>'React'</i>, <i>'TypeScript'</i>],
+  mindset: <i>'keep learning'</i>,
+  build: () =&gt; <strong>impact</strong>
+};</code></pre>
+        </div>
+        <span class="floating-tag tag-a">DESIGN × CODE</span>
+        <span class="floating-tag tag-b">BUILT WITH CARE</span>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="section-label reveal"><span>01</span> ABOUT</div>
+      <div class="about-grid">
+        <h2 class="reveal">디테일은 작지만,<br><em>차이는 큽니다.</em></h2>
+        <div class="about-copy reveal">
+          <p>사용자가 고민하지 않아도 되는 흐름, 팀이 안심하고 확장할 수 있는 구조를 만듭니다. 기술은 목적이 아니라 더 좋은 경험을 위한 도구라고 믿습니다.</p>
+          <dl class="stats">
+            <div><dt>3<span>+</span></dt><dd>Years Experience</dd></div>
+            <div><dt>12<span>+</span></dt><dd>Projects Shipped</dd></div>
+            <div><dt>99<span>%</span></dt><dd>Curiosity</dd></div>
+          </dl>
+        </div>
+      </div>
+      <div class="skills reveal" aria-label="보유 기술">
+        <span>TypeScript</span><span>React</span><span>Next.js</span><span>JavaScript</span><span>CSS</span><span>Node.js</span><span>Figma</span><span>Git</span>
+      </div>
+    </section>
+
+    <section id="work" class="work section">
+      <div class="section-heading reveal">
+        <div class="section-label"><span>02</span> SELECTED WORK</div>
+        <h2>제가 만든 경험.</h2>
+        <p>문제의 본질부터 출시 이후의 디테일까지.</p>
+      </div>
+      <div class="project-list">
+        <article class="project project-featured reveal">
+          <a class="project-visual visual-finance" href="#" aria-label="핀플로우 프로젝트 자세히 보기">
+            <div class="mock-window finance-window">
+              <div class="mock-sidebar"><b>finflow</b><i></i><i></i><i></i><i></i></div>
+              <div class="mock-content"><small>Good morning, Minjun</small><strong>₩ 12,540,000</strong><div class="chart"><span></span></div><div class="mini-cards"><i></i><i></i><i></i></div></div>
+            </div>
+          </a>
+          <div class="project-info">
+            <div class="project-number">01 / 03</div>
+            <h3>Finflow</h3>
+            <p>당신의 모든 자산을 한눈에.<br>더 명확하고, 더 자신 있게.</p>
+            <ul><li>Next.js</li><li>TypeScript</li><li>Recharts</li></ul>
+            <a class="case-link" href="#">Case study <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <a class="project-visual visual-commerce" href="#" aria-label="모노마켓 프로젝트 자세히 보기">
+            <div class="phone"><div class="phone-top"></div><small>MONO</small><div class="product-shape"></div><b>Form Chair 02</b><span>₩ 390,000</span></div>
+            <div class="commerce-card"><small>New collection</small><b>Objects for<br>quiet living.</b><i>Explore →</i></div>
+          </a>
+          <div class="project-info">
+            <div class="project-number">02 / 03</div>
+            <h3>Mono Market</h3>
+            <p>좋은 물건을 발견하는<br>가장 조용하고 아름다운 방법.</p>
+            <ul><li>React</li><li>Styled Components</li><li>Framer Motion</li></ul>
+            <a class="case-link" href="#">Case study <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project reveal">
+          <a class="project-visual visual-collab" href="#" aria-label="플로우데스크 프로젝트 자세히 보기">
+            <div class="board">
+              <div class="board-head"><b>Flowdesk</b><span>Product launch</span></div>
+              <div class="columns"><div><small>TO DO</small><i></i><i></i></div><div><small>IN PROGRESS</small><i></i><i></i></div><div><small>DONE</small><i></i><i></i></div></div>
+            </div>
+          </a>
+          <div class="project-info">
+            <div class="project-number">03 / 03</div>
+            <h3>Flowdesk</h3>
+            <p>팀의 모든 흐름이 한곳에.<br>함께 일하는 새로운 방식.</p>
+            <ul><li>Vue.js</li><li>Pinia</li><li>Firebase</li></ul>
+            <a class="case-link" href="#">Case study <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div class="contact-inner reveal">
+        <p class="section-label"><span>03</span> CONTACT</p>
+        <h2>함께, 멋진 것을<br>만들어 봐요.</h2>
+        <a href="mailto:hello@example.com">이야기 시작하기 <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Minjun Kim</p>
+    <div><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a><a href="https://linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a></div>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+</body>
+</html>
